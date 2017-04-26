@@ -25,7 +25,7 @@ dir_in = sys.argv[1]
 
 # Loop over each image file in given directory
 frame_number = 1
-for file in os.listdir(dir_in):
+for file in sorted(os.listdir(dir_in)):
 	image_file = dir_in + '/' + str(file)
 	print image_file
 	subprocess.call(run_command + " " + image_file + " " + frame_number)
