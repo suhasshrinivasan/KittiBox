@@ -184,6 +184,10 @@ def main(_):
     print('')
     logging.info("{} Cars detected".format(len(accepted_predictions)))
 
+    # Frame number from runtest script
+    if len(sys.argv) == 3:
+        frame_number = sys.argv[2]
+
     # Printing coordinates of predicted rects.
     for i, rect in enumerate(accepted_predictions):
         logging.info("")

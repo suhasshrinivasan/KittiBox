@@ -74,6 +74,8 @@ If you forget the second step you might end up with an inconstant repository sta
 
 Run: `python demo.py --input_image data/demo.png` to obtain a prediction using [demo.png](data/demo.png) as input.
 
+Run: `python runtest.py <dir>` to obtain predictions on images in <dir> as input.
+
 Run: `python evaluate.py` to compute train and validation scores.
 
 Run: `python train.py` to train a new model on the Kitti Data.
